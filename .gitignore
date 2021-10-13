@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-.json
+participantData.json
 
 # testing
 /coverage
