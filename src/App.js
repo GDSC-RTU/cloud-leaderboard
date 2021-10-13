@@ -1,4 +1,5 @@
 import './App.css';
+import Leaderboard from './components/Leaderboard'
 
 function App() {
 
@@ -7,9 +8,10 @@ function App() {
 
   return (
     <div className="App">
-
+      <Leaderboard participantData={data}/>
     </div>
   );
+
 }
 
 export default App;

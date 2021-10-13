@@ -1,6 +1,12 @@
-const Leaderboard = () => {
+const Leaderboard = ({participantData}) => {
     return(
-        <div></div>
+        <div>
+            {/* <table>
+                <tr>
+                    <th>Student Name</th>
+                </tr>
+            </table> */}
+        </div>
     )
 }
 
