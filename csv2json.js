@@ -7,7 +7,7 @@ fs.createReadStream('csv/data.csv')
   .on('data', (data) => results.push(data))
   .on('end', () => {
     fs.writeFileSync(
-      "src/data.json",
+      "src/participantData.json",
       JSON.stringify(results),
       (err) => {
         if (err) throw err;
