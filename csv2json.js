@@ -14,8 +14,13 @@ fs.createReadStream('csv/data.csv')
     })
     
     //descending sort on the basis of total number of labs completed
-    //if labs are same, sort on the basis of Student Name 
-    results.sort((a, b) => (b.totalLabs - a.totalLabs) || a["Student Name"] - b["Student Name"])
+    //if labs are same, sort on the basis of ascending Student Name 
+    results.sort((a, b) => {
+      if(b.totalLabs - a.totalLabs === 0){
+         return a["Student Name"] > b["Student Name"] ? 1 : -1  //sorting in ascending order by name
+      }
+      return (b.totalLabs - a.totalLabs)
+    })
 
     //creating a file called participantData
     fs.writeFileSync(
