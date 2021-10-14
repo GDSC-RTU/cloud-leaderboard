@@ -8,6 +8,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="heading"> 
+        <h1>GDSC RTU Google Cloud Program Leaderboard</h1>
+      </div>
       <Leaderboard participantData={data}/>
     </div>
   );
