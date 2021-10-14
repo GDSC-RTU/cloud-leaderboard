@@ -17,10 +17,8 @@ fs.createReadStream('csv/data.csv')
     //descending sort on the basis of total number of labs completed
 
     results.sort((a, b) => {
-      if(b.totalLabs - a.totalLabs === 0){
+      if(b.totalLabs - a.totalLabs === 0)
          return a["Student Name"] > b["Student Name"] ? 1 : -1  //sorting in ascending order by name
-      }
-
       return (b.totalLabs - a.totalLabs)
     })
 
