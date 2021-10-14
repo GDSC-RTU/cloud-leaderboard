@@ -2,7 +2,7 @@ import TableRow from "./TableRow"
 const Leaderboard = ({ participantData }) => {
 
     return (
-        <div>
+        <div className="container">
             <table className="main-table">
                 <thead>
                     <tr>
