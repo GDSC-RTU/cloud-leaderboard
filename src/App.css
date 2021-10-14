@@ -1,7 +1,5 @@
-body{
+.App{
   padding: 20px 0px;
-  text-align: center;
-  background:#232323;
 }
 
 .main-table{
@@ -30,9 +28,9 @@ body{
 }
 
 .main-table tbody tr:hover{
-  transform: translate3d(-20px, -5px, 5px);
+  transform: translate3d(0px, -5px, 0px);
   transition: all 0.2s ease-in-out;
-  box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+  box-shadow: 0 0 12px rgb(0 0 0 / 50%);
 }
 
 .main-table tbody tr td{
@@ -42,7 +40,6 @@ body{
 h1 {
   text-shadow: 2px 2px #b20fe4;
 }
-
 
 .heading{
    font-size:20px;
@@ -63,20 +60,25 @@ h1 {
   padding: 4px 5px;
 }
 
+.team{
+  color: #fff;
+  margin: 25px 0;
+}
+
+.team a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+}
+
 @media (max-width: 992px){
   .heading{
-    width: 100%;
-    margin: 0;
+    width: 80%;
+    margin: auto;
     font-size: 16px;
   }
 
   .container{
     overflow-x: scroll;
-    width: 100%;
-  }
-
-  .main-table{
-    position: relative;
-    z-index: 1;
   }
 }
