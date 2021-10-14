@@ -1,8 +1,9 @@
 import TableRow from "./TableRow"
 const Leaderboard = ({ participantData }) => {
+
     return (
         <div>
-            <table>
+            <table className="main-table">
                 <thead>
                     <tr>
                         <th>Rank</th>
@@ -14,7 +15,7 @@ const Leaderboard = ({ participantData }) => {
                 </thead>
                 <tbody>
                     {participantData.map((data) => (
-                        <TableRow data={data} key={data["Student Email"]}/>
+                        <TableRow data={data} key={data["Student Email"]} />
                     ))}
                 </tbody>
             </table>
