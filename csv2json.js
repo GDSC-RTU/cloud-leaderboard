@@ -27,6 +27,8 @@ fs.createReadStream('csv/data.csv')
 
     //giving each person a rank according to the number of labs completed
     for(let i = 1; i < results.length; i++){
+
+      
       if(results[i].totalLabs === results[i-1].totalLabs){
         results[i].rank = rank      //if the no of labs are same, give same rank
       }
@@ -45,4 +47,8 @@ fs.createReadStream('csv/data.csv')
       }
     );
   });
+
+
+
+
 
